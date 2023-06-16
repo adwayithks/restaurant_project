@@ -118,11 +118,14 @@ li{
 	}
 
 	.btn{
-		padding-left: 25px;
-		padding-right: 25px;
+		padding-left: 15px;
+		padding-right: 15px;
 		margin-bottom: 10px;
-		font-size: 21px;
+		font-size: 18px;
 		background: cyan;
 		color: black;
+	}
+	#xs-deliver{
+		font-size: 80%;
 	}
 }
