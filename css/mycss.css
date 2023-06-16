@@ -21,12 +21,10 @@ body{
 } 
 
 #logo-img{
-	background: url('logo1.png') no-repeat;
-	width: 150px;
-	height: 113px;
+	background: url('logo3.png') no-repeat;
+	width: 125px;
+	height: 125px;
 	margin: 10px 15px 10px 0px;
-
-
 }
 .navbar-brand{
 	height: 100px;
@@ -34,6 +32,7 @@ body{
 
 .navbar-brand h1{
 	padding-top: 12px;
+	padding-left: 12px;
 	color: lime;
 	text-transform: uppercase;
 	text-decoration: underline;
@@ -87,9 +86,9 @@ li{
 		font-size: 75%;
 	}
 	#logo-img{
-		background: url('logo3.png') no-repeat;
-		width: 125px;
-		height: 94px;
+		background: url('logo1.png') no-repeat;
+		width: 100px;
+		height: 100px;
 
 	}
 	.navbar-brand h1{
@@ -104,6 +103,8 @@ li{
 
 @media (max-width: 767px) {
 	.navbar-brand h1{
+		/*font-size can be given a value with unit vw vw is viewport width 
+		1vw=1% of viewport width*/
 		margin-top:6px;
 		padding-left: 20px;
 		padding-right: 65px;
