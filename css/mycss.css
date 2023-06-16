@@ -116,4 +116,13 @@ li{
 	.navbar-brand{
 		height: 120px;
 	}
+
+	.btn{
+		padding-left: 25px;
+		padding-right: 25px;
+		margin-bottom: 10px;
+		font-size: 21px;
+		background: cyan;
+		color: black;
+	}
 }
