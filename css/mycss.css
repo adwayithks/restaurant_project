@@ -12,6 +12,7 @@ body{
 	background-image: linear-gradient(to bottom right,black,#5f6362) ;
 	font-family: 'Kalam',cursive;	
 }
+/*********start header********/
 
 #header-nav{
 	/*background-image: linear-gradient(to right,#00fc00,#00d100);*/
@@ -73,11 +74,36 @@ li{
 	clear: both;
 	margin-top: -69px;
 }
+/******end header******/
+
+/*****home page*****/
+.container .jumbotron{
+	box-shadow: 0 0 50px black;
+	border: 2px solid black;
+}
+
+/************Large Size Devices*******************/
+@media (min-width: 1200px) {
+	.container .jumbotron{
+		background: url('../restaurant-pic-1200.png') no-repeat;
+		height: 624px;
+		width: 1140px;
+	}
+	
+}
+
+/************Medium Size Devices******************/
+@media (min-width: 992px) and (max-width: 1199px){
+	.container .jumbotron{
+		background: url('../restaurant-pic-991.png') no-repeat;
+		height: 515px;
+		width: 940px;
+	}
+	
+}
 
 
-
-
-/************Medium Size Devices*******************/
+/************Small Size Devices*******************/
 @media (min-width:768px) and (max-width: 991px) {
 	#nav-list{
 		margin-top: 20px;
@@ -95,7 +121,12 @@ li{
 		font-size: 32px;
 		margin-top: 15px;
 	}
-	
+	/******main content jumbotron*/
+	.container .jumbotron{
+		background: url('../restaurant-pic-991.png') no-repeat;
+		height: 394px;
+		width: 720px;
+	}
 }
 
 
@@ -127,5 +158,10 @@ li{
 	}
 	#xs-deliver{
 		font-size: 80%;
+	}
+
+	.container .jumbotron{
+		margin-top: 30px;
+		padding: 0px;
 	}
 }
