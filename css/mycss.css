@@ -2,14 +2,14 @@
 	box-sizing: border-box;
 }
 html,body{
-	height: 100%;
+	min-height: 100%;
 }
 
 body{
 	/*color: #fff;*/ /*gives white color*/
 	font-size: 16px;
 	color: white;
-	background-image: linear-gradient(to bottom right,black,#5f6362) ;
+	background-image: linear-gradient(to bottom right,#5f6362,black) ;
 	font-family: 'Kalam',cursive;	
 }
 /*********start header********/
@@ -81,13 +81,55 @@ li{
 	box-shadow: 0 0 50px black;
 	border: 2px solid black;
 }
+#menu-tile, #specials-tile, #map-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid black;
+	overflow: hidden;
+	color: lime;
+	border-radius: 20px;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px lime;
+	font-size: 150%;
+	border: 1px solid lime;
+}
+#menu-tile{
+	background: url('../images/menu.png') black no-repeat;
+	background-position: top;
+}
+#specials-tile{
+	background: url('../images/specials.png') black no-repeat top;
+}
+#menu-tile span,#specials-tile span, #map-tile span{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	background: black;
+	opacity: .85;
+	font-size: 150%;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+#map-tile{
+
+}
 
 /************Large Size Devices*******************/
 @media (min-width: 1200px) {
 	.container .jumbotron{
-		background: url('../restaurant-pic-1200.png') no-repeat;
+		background: url('../images/restaurant-pic-1200.png') no-repeat;
 		height: 624px;
 		width: 1140px;
+	}
+	#nav-list a{
+		font-size: 110%;
+	}
+	li:nth-child(-n+3):hover{
+	border: 3px lime dashed;
 	}
 	
 }
@@ -95,7 +137,7 @@ li{
 /************Medium Size Devices******************/
 @media (min-width: 992px) and (max-width: 1199px){
 	.container .jumbotron{
-		background: url('../restaurant-pic-991.png') no-repeat;
+		background: url('../images/restaurant-pic-991.png') no-repeat;
 		height: 515px;
 		width: 940px;
 	}
@@ -123,10 +165,13 @@ li{
 	}
 	/******main content jumbotron*/
 	.container .jumbotron{
-		background: url('../restaurant-pic-991.png') no-repeat;
+		background: url('../images/restaurant-pic-991.png') no-repeat;
 		height: 394px;
 		width: 720px;
+		border-radius: 20px;
 	}
+
+	
 }
 
 
@@ -163,5 +208,11 @@ li{
 	.container .jumbotron{
 		margin-top: 30px;
 		padding: 0px;
+		border-radius: 20px;
 	}
+	.myimg{
+		border-radius: 20px;
+	}
+
+
 }
