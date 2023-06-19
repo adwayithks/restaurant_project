@@ -9,9 +9,11 @@ body{
 	/*color: #fff;*/ /*gives white color*/
 	font-size: 16px;
 	color: white;
-	background-image: linear-gradient(to bottom right,#5f6362,black) ;
+	/*background-image: linear-gradient(to bottom right,#5f6362,black) ;*/
+	background: #5f6362;
 	font-family: 'Kalam',cursive;	
 }
+
 /*********start header********/
 
 #header-nav{
@@ -29,6 +31,21 @@ body{
 }
 .navbar-brand{
 	height: 100px;
+}
+abbr {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+  color: white !important;
+  font-size: 100%;
+}
+abbr>a{
+	color: white !important;
+	font-family: 'Kalam' !important;
+}
+abbr>a:hover{
+	color: pink !important;
+	font-size: 120% !important;
 }
 
 .navbar-brand h1{
@@ -114,8 +131,45 @@ li{
 	text-transform: capitalize;
 	font-weight: 500;
 }
-#map-tile{
+/***** end home page *****/
+/****** footer ***********/
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 0;
+	background: #222 ; 
+}
+#hours,#address{
+	line-height: 2;
+}
+#innercontent{
+	padding-left: 20px;
+}
+#hours>span,#address>span{
+	font-size: 1.3em;
+}
+#testimonials{
+	font-style: italic;
+	text-align: center;
+}
+#testimonials p:nth-child(1){
+	margin-top: 10px;
+}
+#testimonials p:nth-child(2){
+	margin-top: 25px;
+}
 
+#delivery{
+	margin-top: 10px;
+	color: cyan;
+	line-height: 1;
+	font-size: 90%;
+}
+#copyright{
+	background:black;
+	color:lime; 
+	width:100%;
 }
 
 /************Large Size Devices*******************/
@@ -213,6 +267,20 @@ li{
 	.myimg{
 		border-radius: 20px;
 	}
-
+	
+	#menu-tile,#specials-tile,#map-tile{
+		max-width: 390px;
+		margin: 0 auto 15px auto;
+	}
+	/*******footer*********/
+	.panel-footer section{
+		text-align: center;
+	}
+	.panel-footer section hr{
+		width: 70%;
+	}
+	#testimonials{
+	margin-top: 30px;
+	}
 
 }
