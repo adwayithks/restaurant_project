@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<title> restaurent site making </title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/mycss.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!--jQuery (Bootstrap JS plugins depend on it) -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--                                    -->
+	<!--      header part top navbar-->
+		<header>
+			<nav id="header-nav" class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="index.html" class="pull-left hidden-xs">
+							<div id="logo-img" alt="logo image">
+								
+							</div>
+						</a>
+						<div class="navbar-brand">
+							<a href="index.html"><h1> My restaurant </h1> </a>
+						</div>
+						
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				        </button>
+					</div>
+
+					<div id="collapsable-nav" class="collapse navbar-collapse">
+		            	<ul id="nav-list" class="nav navbar-nav navbar-right">
+		            		<li>
+		            			<a href="menu-categories.html">
+		            				<span class="glyphicon glyphicon-cutlery">
+		            				</span>
+		            				<br class="hidden-xs"> Menu
+		            			</a>
+		            		</li>
+
+		            		<li>
+		            			<a href="#">
+		            				<span class="glyphicon glyphicon-info-sign">
+		            				</span>
+		            				<br class="hidden-xs"> About
+		            			</a>
+		            		</li>
+
+		            		<li>
+		            			<a href="#">
+		            				<span class="glyphicon glyphicon-certificate">
+		            				</span>
+		            				<br class="hidden-xs"> Awards
+		            			</a>
+		            		</li>
+
+		            		<li id="phone" class="hidden-xs">
+		            			<a href="tel:410-602-5008">
+		            				<span>410-602-5008
+		            				</span>
+		            			</a>
+		            			<abbr title="for further detais see the webpage footer"><a href="#delivery"><div>* We Deliver</div></abbr></a>
+		            		</li>
+	            		</ul>
+	            	</div>
+				</div>
+			</nav>
+		</header>
+		<div id="call-btn" class="text-center visible-xs">
+			<a class="btn" href="tel:410-602-5008">
+				<span class="glyphicon glyphicon-earphone"></span>
+				410-602-5008
+			</a>
+		</div>
+		<div id="xs-deliver" class="text-center visible-xs"> * We Deliver </div>
+
+
+
+<!--        main content          -->
+		
+		<div id="main-content" class="container">
+			<h2 id="menu-categories" class="text-center"> Menu Categories </h2>
+			<section class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 ">
+					<a href="single-category.html">
+						<div class="category-tile">
+							<img src="images/specials.png" alt="food">
+							<span> dosa </span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6 ">
+					<a href="single-category.html">
+						<div class="category-tile">
+							<img src="images/specials.png" alt="food">
+							<span> dosa </span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6 ">
+					<a href="single-category.html">
+						<div class="category-tile">
+							<img src="images/specials.png" alt="food">
+							<span> dosa </span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6 ">
+					<a href="single-category.html">
+						<div class="category-tile">
+							<img src="images/specials.png" alt="food">
+							<span> dosa </span>
+						</div>
+					</a>
+				</div>
+			</section>
+		</div><!--end of main content-->
+
+		<!--footer-->
+		<footer class="panel-footer">
+			<div class="container">
+				<div class="row">
+					<section class="col-sm-4" id="hours">
+						<span>	Hours:	</span><br>
+						<article id="innercontent">Mon-Sun : 8:00 am to 9:00 pm<br>
+						All days are working days</article>
+						<hr class="visible-xs">						
+					</section>
+					<section id="address" class="col-sm-4">
+						<span> Address: </span><br>
+						<article id="innercontent">7105 Reisterstown Road <br>
+						Baltimore,MD 21215
+						<p id="delivery"> *Delivery area within 5 kms, with minimum order of Rs.200 plus Rs.30 charge for all deliveries. </p></article>
+						<hr class="visible-xs">
+					</section>
+					<section id="testimonials" class="col-sm-4">
+						<article id="innercontent"><p>"The best resturant I've been to! And that's saying a lot, since
+						 I've been to many!"</p>
+						 <p> "Amazing food! Great service! kudos to the restaurant team!"</p></article>
+					</section>
+				</div>
+			</div>
+		</footer>
+		<div class="text-center" id="copyright">&copy; Mr.Nobody &trade; since 2004</div>
+
+
+
+	</body>
+</html>

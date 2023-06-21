@@ -131,6 +131,46 @@ li{
 	text-transform: capitalize;
 	font-weight: 500;
 }
+.category-tile{
+	width: 250px;
+	height: 200px;
+	background: black;
+	color: white;
+	border: 2px solid black;
+	overflow: hidden;
+	position: relative;
+	margin: auto 0 15px auto;
+	border-radius: 20px;
+	font-size: 150%;
+	text-transform: capitalize;
+}
+.category-tile>img{
+	width: 250px;
+	height: 200px;
+	overflow: hidden;
+}
+.category-tile>span{
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	background: black;
+	opacity: .8;
+
+
+}
+#menu-categories{
+	margin-bottom: 50px;
+	text-decoration: underline;
+}
+.category-tile:hover{
+	color: lime;
+	box-shadow: 0 1px 5px 1px lime;
+	font-size: 200%;
+	border-color: lime;
+}
+
+
 /***** end home page *****/
 /****** footer ***********/
 .panel-footer{
@@ -281,6 +321,10 @@ li{
 	}
 	#testimonials{
 	margin-top: 30px;
+	}
+	.category-tile{
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 }
