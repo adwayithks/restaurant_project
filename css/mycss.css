@@ -68,11 +68,11 @@ abbr>a:hover{
 li:nth-child(-n+3):hover{
 	font-size: 120%;
 	color: lime;
-	border: 2px lime;
-	border-style: dashed;
+	border: 2px dashed lime;
 }
 li{
 	margin-top: 5px;
+	margin: auto 5px auto 5px;
 }
 #phone div{
 	text-align: right;
@@ -170,6 +170,52 @@ li{
 	border-color: lime;
 }
 
+/********indicator of we are currently on menu page**************/
+.menupage{
+	border: 2px dashed lime;
+	font-size: 120%;
+}
+/********indicator over********/
+
+/********single-category.html styles********/
+#lunch-desc{
+	padding-bottom: 10px;
+	color: lime;
+}
+#lunch-hr{
+	padding-bottom: 20px;
+}
+.menu-tile-2{
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.menu-item-photo{
+	position: relative;
+}
+.menu-item-photo div{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	background: green;
+	padding-left: 7px;
+	padding-bottom: 2px;
+	padding-right: 7px;
+	padding-top: 2px;
+}
+.menu-item-price{
+	text-align: center;
+	border: 2px solid black;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+h3.menu-item-title{
+	color: cyan;
+}
+.menu-tile-2:hover{
+	background: #3d4849;
+}
+
 
 /***** end home page *****/
 /****** footer ***********/
@@ -225,6 +271,10 @@ li{
 	li:nth-child(-n+3):hover{
 	border: 3px lime dashed;
 	}
+	.menupage{
+	border: 3px dashed lime;
+	font-size: 120%;
+}
 	
 }
 
@@ -249,12 +299,12 @@ li{
 	}
 	#logo-img{
 		background: url('logo1.png') no-repeat;
-		width: 100px;
-		height: 100px;
+		max-width: 100px;
+		max-height: 100px;
 
 	}
 	.navbar-brand h1{
-		font-size: 32px;
+		font-size: 30px;
 		margin-top: 15px;
 	}
 	/******main content jumbotron*/
@@ -263,6 +313,14 @@ li{
 		height: 394px;
 		width: 720px;
 		border-radius: 20px;
+	}
+	li:nth-child(-n+3):hover{
+		font-size: 100%;
+		border: 1px dashed lime;
+	}
+.menupage{
+		border: 1px dashed lime;
+		font-size: 100%;
 	}
 
 	
@@ -326,5 +384,25 @@ li{
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+	/*end footer*/
+	/*single-category-html*/
+	.menu-tile-2:hover{
+		background: #5f6362;
+	}
+	.menu-item-price{
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.col-sm-5 .menu-item-photo{
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.menu-tile-2{
+		text-align: center;
+	}
+	li:nth-child(-n+3){
+		margin-top: 10px;
+	}
 }
