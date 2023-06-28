@@ -171,7 +171,7 @@ li{
 }
 
 /********indicator of we are currently on menu page**************/
-.menupage{
+.activa{
 	border: 2px dashed lime;
 	font-size: 120%;
 }
@@ -214,6 +214,10 @@ h3.menu-item-title{
 }
 .menu-tile-2:hover{
 	background: #3d4849;
+}
+.menu-item-description{
+	height: 150.7px;
+	overflow: auto;
 }
 
 
