@@ -65,7 +65,7 @@ abbr>a:hover{
 	color: lime;
 	text-align: center;
 }
-li:nth-child(-n+3):hover{
+li:nth-child(-n+4):hover{
 	font-size: 120%;
 	color: lime;
 	border: 2px dashed lime;
@@ -272,7 +272,7 @@ h3.menu-item-title{
 	#nav-list a{
 		font-size: 110%;
 	}
-	li:nth-child(-n+3):hover{
+	li:nth-child(-n+4):hover{
 	border: 3px lime dashed;
 	}
 	.menupage{
@@ -318,7 +318,7 @@ h3.menu-item-title{
 		width: 720px;
 		border-radius: 20px;
 	}
-	li:nth-child(-n+3):hover{
+	li:nth-child(-n+4):hover{
 		font-size: 100%;
 		border: 1px dashed lime;
 	}
@@ -406,7 +406,7 @@ h3.menu-item-title{
 	.menu-tile-2{
 		text-align: center;
 	}
-	li:nth-child(-n+3){
+	li:nth-child(-n+4){
 		margin-top: 10px;
 	}
 }
